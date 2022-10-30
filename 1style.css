@@ -1,0 +1,102 @@
+body
+{
+	background-color: #EBEDEF;
+	font-family: sans-serif;
+	font-size: 1.2rem;
+
+	display: flex;
+	flex-direction: column;
+}
+
+em
+{
+	font-style: italic;
+}
+
+strong
+{
+	font-weight: bold;
+}
+
+mark
+{
+	text-decoration: underline overline;
+	color: #1C2833;
+	background-color: #5590B6;
+}
+
+h1, h2
+{
+	border-top: 2px solid black;		/* Superpropriétés (propriétés combinées) */
+	border-bottom: 2px solid black;
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+	border-radius: 15px / 10px;
+	color: #212F3D;
+	background-color: #D5D8DC;
+}
+
+h1
+{
+/*	text-align: center; */
+}
+
+h2
+{
+	text-align: center;
+	width: 75%;
+}
+
+h3
+{
+	font-weight: bold;
+	font-style: italic;
+/*	text-decoration: underline; */
+	color: #273746;
+}
+
+p, ul
+{
+	color: #1C2833;
+/*	width: 50%;					Prend tout le temps 50% de la page */
+/*	min-width: 600px;			Jusqu'à une taille de 600px min */
+}
+
+a
+{
+	color: #1A5276;
+	text-decoration: none;
+	transition: color 0.5s;
+}
+
+.nom_site
+{
+	font-size: 1.3rem;
+}
+
+section
+{
+	margin-left: 300px;
+	margin-right: 300px;
+
+	display: flex;
+	flex-direction: column;
+}
+
+footer
+{
+	margin-top: 75px;
+	border-top: 2px solid grey;
+	color: #212F3D;
+	background-color: #D5D8DC;
+}
+
+a:visited
+{
+	color: #1A5276;
+}
+
+a:hover, a:focus
+{
+	color: #2675B3;
+}

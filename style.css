@@ -149,8 +149,9 @@ h3
 #sommaire_premiere ul, #sommaire_terminale ul
 {
 	display: flex;
-    flex-wrap: wrap;
+	flex-wrap: wrap;
 	list-style-type: none;
+
 }
 
 #sommaire_premiere li, #sommaire_terminale li
@@ -315,16 +316,6 @@ footer a:focus
 	{
 		margin-bottom: -15px;
 	}
-    
-    #sommaire_premiere ul, #sommaire_terminale ul
-    {
-	    padding: 0;
-    }
-	#sommaire_premiere li, #sommaire_terminale li
-    {
-		font-size: 0.93rem;
-		margin-bottom:20px;
-    }
 }
 
 @media all and (max-width: 455px)
