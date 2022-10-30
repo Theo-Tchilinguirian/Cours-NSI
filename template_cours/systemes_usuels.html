@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="Cours de NSI de première et de terminale - Écriture d’entiers positifs et différentes bases" />
+        <meta name="keywords" content="NSI, ISN, nsi, isn, cours, première, terminale, numérique, informatique" />
+        <meta name="author" content="Cours-NSI" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="systemes_usuels.css" />
+		<link rel="icon" type="image/png" sizes="32x32" href="../../../favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="../../../favicon-16x16.png" />
+		<link rel="canonical" href="https://cours-nsi.fr">
+		<link rel="home" href="https://cours-nsi.fr">
+        <title>Écriture d’entiers positifs et différentes bases - Cours NSI</title>
+      
+      	<!-- Global site tag (gtag.js) - Google Analytics -->
+    	<script async src="https://www.googletagmanager.com/gtag/js?id=G-R771FRZCBR"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-R771FRZCBR');
+        </script>
+    </head>
+
+    <body>
+    	<div id="bloc_page">
+	        <header>
+	        	<div id="titre_principal">
+	        		<div id="logo">
+			        	<img src='../../../logo.png' alt="Logo" title="Cours-NSI"/>
+			        	<h1>Cours-NSI</h1>
+		        	</div>
+		    		<h2>Cours de NSI de première et de terminale</h2>
+	        	</div>
+
+		        <nav>
+		            <ul>
+		            	<li><a href="https://www.cours-nsi.fr">Sommaire</a></li>
+		                <li><a href="#bloc_page">Retourner en haut</a></li>
+		                <li><a href="Cours-NSI_Lorem_ipsum_résumé.pdf" title="Télécharger Cours-NSI_Lorem_ipsum_résumé.pdf" download>Télécharger le cours résumé</a></li>
+		                <li><a href="#bas_de_page">Aller en bas de page</a></li>
+		            </ul>
+		        </nav>
+	        </header>
+
+	        <div id="section_principale">
+				<section id="description">
+		        	<h2>Écriture d’entiers positifs et différentes bases</h2>
+		        	<p>
+		        		Dans ce cours, nous verrons ce qu'est une base, nous nous intéresserons aux différents systèmes : binaire, décimal, hexadécimal, et apprendrons à écrire et convertir des entiers positifs dans différentes bases.
+		        	</p>
+		        </section>
+				
+				<section id="cours">
+					<h2></h2>
+		        	<section class="partie">
+		        		<h3>1. La base 10 : le système décimal.</h3>
+		        		<section class="sous_partie">
+				            <h4>a. Qu’est-ce qu’une base ?</h4>
+
+							<p>
+								Pour compter, on utilise des ‘systèmes’. Couramment, en sciences ou en mathématiques, on compte avec le système décimal : on compte avec 10 chiffres, de 0 à 9. Avec ces chiffres, on forme des nombres.
+							</p>
+							<p>
+								Ce système est le plus largement répandu dans le monde, à la base des systèmes de comptage de nombreuses civilisations. Il découle du nombre des doigts des deux mains, cependant, certaines civilisations anciennes comptaient par 60, 20 ou 8
+							</p>
+							<figure>
+								<img src="img/figure1.png" alt="[Figure d’un nombre, 687, avec ses 3 rangs mis en évidence (unités : 0, dizaines : 1, centaines : 2.]" />
+								<figcaption>Dans un nombre, chaque chiffre a son rang.</figcaption>
+							</figure>
+							<p>
+								On peut décomposer chaque chiffre du nombre en une addition de la base à la puissance du rang :
+							</p>
+							<figure>
+								<img src="img/figure2.png" alt="[Figure du même nombre, avec en dessous de chaque rang marqué : 7 x 10^0 + 8 x 10^1 + 6 x 10^2 = 687]" />
+								<figcaption></figcaption>
+							</figure>
+							<p>
+								Un nombre est donc constitué de rangs qui représentent des puissances de sa base :
+							</p>
+							<figure>
+								<img src="img/figure3.png" alt="[figure de : a x base^rang 2 + b x base^rang 1 + c x base^rang 0]" />
+								<figcaption>Avec a, b, c des nombres entiers positifs.</figcaption>
+							</figure>
+							<p>
+								Lorsque a, b ou c est plus grand que le dernier chiffre de la base (en base 10, ce sera 9), alors on passe au rang suivant.
+							</p>
+						</section>
+
+						<section class="sous_partie">
+							<h4>b. Compter en base 10</h4>
+
+							<p>
+								Ainsi, lorsque l’on compte en base dix, chaque rang peut contenir un chiffre de 0 à 9, qui est en fait un multiple de 10 à la puissance du rang.
+							</p>
+							<p>
+								Pour les unités, le rang est 0 : 10^0 = 1.<br />
+								Le nombre 8 est donc constitué de 8 x 10^0 = 8 x 1 = 8.
+							</p>
+							<p>
+								Pour les dizaines, le rang est 1 : 10^1 = 10.<br />
+								Le nombre 75 est donc constitué de 7 x 10^1 additionné à 5 x 10^0.
+							</p>
+							<p>
+								Pour les centaines, le rang est 2 : 10^2 = 100.<br />
+								Le nombre 475 est donc constitué de 4 x 10^2 + 7 x 10^1 + 5 x 10^0 = 475.
+							</p>
+							<p>
+								Et ainsi de suite.
+							</p>
+						</section>
+					</section>
+
+					<section class="partie">
+		        		<h3>2. Le système binaire : la base 2.</h3>
+		        		<section class="sous_partie">
+				            <h4>a. Pourquoi utiliser le système binaire</h4>
+
+							<p>
+								Le système binaire, en base 2, est utilisé par les ordinateurs et les appareils électroniques pour réaliser des opérations de calcul.
+							</p>
+							<p>
+								En base 2, on compte avec 2 chiffres : 0 et 1. Ces deux chiffres représentent les états des composants électroniques de l’ordinateur : si le courant passe, ou s' il ne passe pas.
+							</p>
+							<p>
+								C’est la raison pour laquelle les ordinateurs utilisent le système binaire.
+							</p>
+						</section>
+
+						<section class="sous_partie">
+							<h4>b. Compter en base 2</h4>
+
+							<p>
+								Il n’y a donc que 2 chiffres en binaire : 0 et 1.
+							</p>
+							<p>
+								En décimal, un nombre est constitué d’un certain nombre de rangs. En binaire, un rang est appelé un ‘bit’, pour ‘binary digit’, qui signifie chiffre binaire.
+							</p>
+							<p>
+								L’ordinateur les réunit en petits paquets de huit : les octets (‘byte’ en anglais). Un octet est donc composé de 8 bits.
+							</p>
+							<figure>
+								<img src="img/figure3.png" alt="[Figure nombre binaire quelconque avec bit de poids fort et faible, de 1 octet]" />
+								<figcaption>Nombre binaire de 1 octet (8 bits)</figcaption>
+							</figure>
+							<p>
+								Dans un nombre binaire, le bit le plus à droite, qui est multiple de 2^0, est appelé bit de poids faible, car il ne peut valoir que 0 x 1 ou 1 x 1.<br />
+								Le bit le plus à gauche est appelé bit de poids fort. Ici, c’est le 8e bit, donc 2^7, qui est égal à 128. Ce bit vaut donc 0 x 128 ou 1 x 128 : sa valeur change drastiquement la valeur entière du nombre.
+							</p>
+							<p>
+								Le bit de poids faible indique si le nombre est pair ou impaire.
+							</p>
+							<p>
+								Sur un octet (8 bits, puissances de 0 à 7), la valeur d’un nombre peut s’élever jusqu’à 255: 1 x 2^7 + 1 x 2^6 + … + 1 x 2^0 = 255. Pour information, 2^8 = 256.
+							</p>
+						</section>
+					</section>
+
+					<section class="partie">
+		        		<h3>3. Convertir un entier positif entre décimal et binaire</h3>
+		        		<section class="sous_partie">
+				            <h4>a. Conversion décimal vers binaire</h4>
+
+							<p>
+								On pose le nombre décimal 475.<br />
+								Il s’agit de le diviser par 2 :<br />
+								155 = 2 x 77 + 1. Il reste 1 car 155 est impair.<br />
+								On divise ensuite 77 par 2, et ainsi de suite :<br />
+								77 = 2 x 38 + 1<br />
+								38 = 2 x 19 + 0<br />
+								19 = 2 x 9 + 1<br />
+								9 = 2 x 4 + 1<br />
+								4 = 2 x 2 + 0<br />
+								2 = 2 x 1 + 0<br />
+								1 = 2 x 0 + 1
+							</p>
+							<p>
+								On lit les restes des divisions successives, le bit de poids fort (extrémité gauche du nombre binaire) étant le reste de la dernière division, ici 1 = 2 x 0 + 1.<br />
+								On reconstruit ainsi le nombre binaire : 10011011
+							</p>
+							<p>
+								Afin de convertir plus vite les nombres décimaux en nombres binaires, il s’agit de connaître les puissances de 2 importantes :<br />
+								2^0 = 1, 2^1 = 2<br />
+								2^5 = 32, 2^10 = 1024
+							</p>
+							<p>
+								À partir de ces puissances de 2, on peut retrouver facilement 64 = 2 x 32, donc 64 = 2^6, etc.<br />
+							</p>
+							<p>
+								Ainsi, si on pose 155 un nombre en base 10, on cherche la puissance de 2 la plus grande que l’on peut soustraire à ce nombre : 128<br />
+								128 = 2^7, et 155 - 128 = 27
+							</p>
+							<p>
+								On peut soustraire 16 à 27<br />
+								16 = 2^4, et 27 - 16 = 11
+							</p>
+							<p>
+								On peut soustraire 8 à 11<br />
+								8 = 2^3, et 11 - 8 = 3
+							</p>
+							<p>
+								On peut soustraire 2 à 3<br />
+								2 = 2^1, et 3 - 2 = 1
+							</p>
+							<p>
+								On peut soustraire 1 à 1<br />
+								1 = 2^0, et 1 - 1 = 0
+							</p>
+							<p>
+								On arrive à 0. Pour reconstruire le nombre binaire, on écrit 1 à chaque puissance que l’on a soustrait au nombre décimal, et 0 aux autres : On a pu soustraire au nombre décimal les puissances mises en évidence. On obtient donc :
+							</p>
+							<p>
+								10011011 en base 2, avec pour bit de poids fort 1 x 2^7 = 128.
+							</p>
+						</section>
+
+						<section class="sous_partie">
+							<h4>b. Conversion binaire vers décimal</h4>
+
+							<figure>
+								<img src="img/figure3.png" alt="[Nombre binaire quelconque avec 2^rang du bit marqué en dessous de chaque bit]" />
+								<figcaption>Une puissance de 2 est associée à chaque bit</figcaption>
+							</figure>
+							<p>
+								Il s’agit donc de multiplier la valeur de chaque bit (0 ou 1) par la puissance de 2 correspondante, puis de tous les additionner pour retrouver la valeur en base 10.
+							</p>
+							<figure>
+								<img src="img/figure3.png" alt="[figure représentant le calcul]" />
+								<figcaption></figcaption>
+							</figure>
+							<figure>
+								<img src="img/figure3.png" alt="[figure du résultat]" />
+								<figcaption></figcaption>
+							</figure>
+						</section>
+					</section>
+
+					<section class="partie">
+		        		<h3>4. Représenter un entier positif dans différentes bases</h3>
+		        		<section class="sous_partie">
+				            <h4>a. La base 16</h4>
+
+							<p>
+								En base 16, ou système hexadécimal, il y a 16 chiffres : de 0 à 9, et de A à F.
+							</p>
+							<p>
+								Les valeurs des lettres en décimal sont :<br />
+								A : 10, B : 11, C : 12, D : 13, E : 14, F : 15.
+							</p>
+							<figure>
+								<img src="img/figure3.png" alt="[figure de CA1 avec chaque rang et la puissance de 16 associée]" />
+								<figcaption></figcaption>
+							</figure>
+							<p>
+								À chaque rang est associé une puissance de 16 correspondant au rang. Ici, ce nombre en base 16 est constitué de 1 x 16^0 + 10 x 16^1 + 12 x 16^2, il est donc égal à 3248 en base 10.
+							</p>
+						</section>
+					</section>
+				</section>
+	    	</div>
+	        
+	        <footer id="bas_de_page">
+	        	<div id="licence">
+	        		<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+	        		<a title="daPhyre, CC BY 3.0 &lt;https://creativecommons.org/licenses/by/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:CSS3_and_HTML5_logos_and_wordmarks.svg"><img width="64" alt="CSS3 and HTML5 logos and wordmarks" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/CSS3_and_HTML5_logos_and_wordmarks.svg/64px-CSS3_and_HTML5_logos_and_wordmarks.svg.png"></a>
+	        	</div>
+	        	<div id="contacts">
+	            	<p>
+	            	    Contact (signaler une erreur, ...) : <a href="mailto:contact@cours-nsi.fr" title="Envoyer un mail">contact@cours-nsi.fr</a>
+	            	</p>
+	        	</div>
+	        </footer>
+	    </div>
+    </body>
+</html>
